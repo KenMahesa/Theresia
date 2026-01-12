@@ -21,7 +21,7 @@ We are best couple
 <!-- START BUTTON -->
 <a href="Page1.html">
   <img 
-    src="https://img.shields.io/badge/START-NEON-00ffff?style=for-the-badge&logo=github&logoColor=black"
+    src="https://img.shields.io/badge/START-00ffff?style=for-the-badge&logo=github&logoColor=black"
     alt="Start Button"
   />
 </a>
