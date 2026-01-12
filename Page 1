@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Theme Selector</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-image 0.6s ease;
+    }
+
+    .container {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        padding: 30px;
+        width: 320px;
+        text-align: center;
+        box-shadow: 0 0 30px #00ffff;
+    }
+
+    /* Profil */
+    .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid #00ffff;
+        box-shadow: 0 0 20px #00ffff;
+        margin-bottom: 15px;
+    }
+
+    .profile h2 {
+        color: #00ffff;
+        text-shadow: 0 0 10px #00ffff;
+        margin-bottom: 25px;
+    }
+
+    /* Tombol Opsi */
+    .options button {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        background: transparent;
+        color: #00ffff;
+        border: 2px solid #00ffff;
+        border-radius: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 10px #00ffff;
+    }
+
+    .options button:hover {
+        background: #00ffff;
+        color: #000;
+        box-shadow: 0 0 25px #00ffff;
+    }
+</style>
+</head>
+
+<body id="bg">
+
+<div class="container">
+    <div class="profile">
+        <!-- Ganti gambar profil di sini -->
+        <img src="profile.jpg" alt="Profile">
+        <h2>Neon Selector</h2>
+    </div>
+
+    <div class="options">
+        <button onclick="changeBg(1)">Neon City</button>
+        <button onclick="changeBg(2)">Cyber Night</button>
+        <button onclick="changeBg(3)">Neon Forest</button>
+        <button onclick="changeBg(4)">Future Sky</button>
+    </div>
+</div>
+
+<script>
+    function changeBg(option) {
+        const bg = document.getElementById("bg");
+
+        switch(option) {
+            case 1:
+                bg.style.backgroundImage = "url('bg1.jpg')";
+                break;
+            case 2:
+                bg.style.backgroundImage = "url('bg2.jpg')";
+                break;
+            case 3:
+                bg.style.backgroundImage = "url('bg3.jpg')";
+                break;
+            case 4:
+                bg.style.backgroundImage = "url('bg4.jpg')";
+                break;
+        }
+    }
+
+    // Background default
+    changeBg(1);
+</script>
+
+</body>
+</html>
