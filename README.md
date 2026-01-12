@@ -1,6 +1,4 @@
-# Theresia
-We are best couple
-<div align="center">
+<div align="center" style="background-color:black; padding:40px;">
 
 <!-- Background Image -->
 <img src="Arknights.full.4208840.png" alt="Background" width="100%" />
