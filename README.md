@@ -5,6 +5,17 @@
 
 <br><br>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Theresia</title>
+
+    <style>
+        h1:first-child {
+            display: none;
+        }
+    </style>
+</head>
+
 <!-- Title -->
 <h1 style="color:#00ffff; text-shadow: 0 0 10px #00ffff;">
 Theresia
