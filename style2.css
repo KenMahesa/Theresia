@@ -1,26 +1,22 @@
-.history-section {
-    background-image:
-        linear-gradient(
-            rgba(16, 13, 22, 0.78),
-            rgba(16, 13, 22, 0.94)
-        ),
-        url("Ziarah Epik di Kota Reruntuhan.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 /* =========================
    SARKAZ HISTORY
 ========================= */
 
 .history-section {
     position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 35px;
-    scroll-margin-top: 40px;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(12, 8, 16, 0.35),
+            rgba(12, 8, 16, 0.78)
+        ),
+        url("Ziarah Epik di Kota Reruntuhan.png");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .history-heading {
