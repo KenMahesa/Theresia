@@ -1,0 +1,180 @@
+
+/* =========================
+   SARKAZ HISTORY
+========================= */
+
+.history-section {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 35px;
+    scroll-margin-top: 40px;
+}
+
+.history-heading {
+    max-width: 760px;
+    margin-bottom: 65px;
+}
+
+.history-heading h2 {
+    margin: 15px 0 25px;
+    color: #f2dce6;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: normal;
+}
+
+.history-intro {
+    color: #ddcbd5;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Timeline */
+
+.history-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 25px;
+
+    padding: 35px 30px;
+    margin-bottom: 25px;
+
+    background: rgba(20, 13, 23, 0.78);
+    border: 1px solid rgba(220, 165, 189, 0.22);
+    border-left: 2px solid #785064;
+
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.history-card:hover {
+    border-color: rgba(220, 165, 189, 0.55);
+    border-left-color: #dca5bd;
+    background: rgba(38, 21, 35, 0.88);
+    transform: translateX(4px);
+}
+
+/* Roman numerals */
+
+.history-number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: #dca5bd;
+    font-size: 30px;
+    font-style: italic;
+
+    border-right: 1px solid rgba(220, 165, 189, 0.25);
+    padding-right: 20px;
+}
+
+/* History text */
+
+.history-date {
+    color: #dca5bd;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.history-content h3 {
+    color: #f2dce6;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.history-content p:not(.history-date) {
+    color: #d9cbd3;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.history-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Theresia's era */
+
+.theresia-history {
+    border-left-color: #dca5bd;
+    background: rgba(42, 22, 39, 0.80);
+}
+
+.theresia-history .history-number {
+    color: #f0bfd3;
+}
+
+/* Closing statement */
+
+.history-conclusion {
+    margin-top: 65px;
+    padding: 45px 35px;
+
+    text-align: center;
+    background: rgba(15, 9, 18, 0.86);
+
+    border-top: 1px solid rgba(220, 165, 189, 0.45);
+    border-bottom: 1px solid rgba(220, 165, 189, 0.45);
+}
+
+.history-conclusion h3 {
+    margin: 15px 0 20px;
+    color: #f2dce6;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.history-conclusion > p:not(.section-label) {
+    max-width: 700px;
+    margin: 0 auto 18px;
+    color: #d9cbd3;
+    line-height: 1.9;
+}
+
+.history-conclusion blockquote {
+    max-width: 650px;
+    margin: 35px auto 0;
+    color: #e8b9cc;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    .history-section {
+        padding: 70px 20px;
+    }
+
+    .history-card {
+        grid-template-columns: 42px 1fr;
+        gap: 15px;
+        padding: 25px 18px;
+    }
+
+    .history-number {
+        font-size: 23px;
+        padding-right: 10px;
+    }
+
+    .history-content h3 {
+        font-size: 21px;
+    }
+
+    .history-content p:not(.history-date) {
+        font-size: 14px;
+    }
+
+    .history-date {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .history-conclusion {
+        padding: 35px 20px;
+    }
+}
