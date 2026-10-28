@@ -1,0 +1,287 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #100d16;
+    color: #f3e7ed;
+    line-height: 1.8;
+}
+
+/* BACKGROUND */
+.babel-background {
+    position: relative;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(12, 8, 16, 0.35),
+            rgba(12, 8, 16, 0.78)
+        ),
+        url("Pict/Theresia.png");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at 50% 20%,
+        transparent 0%,
+        rgba(10, 5, 12, 0.15) 45%,
+        rgba(10, 5, 12, 0.50) 100%
+    );
+}
+
+main,
+.navbar,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: rgba(12, 8, 16, 0.68);
+    border-bottom: 1px solid rgba(224, 173, 196, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: #f2dce6;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: #d9c5d0;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #f5a9c8;
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.subtitle,
+.section-label {
+    color: #dca5bd;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+    color: #f7e8ef;
+    font-size: clamp(42px, 8vw, 86px);
+    line-height: 1.15;
+    letter-spacing: 7px;
+    text-shadow: 0 0 20px rgba(238, 167, 197, 0.35),
+                 0 0 50px rgba(128, 49, 91, 0.35);
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    margin: 18px auto;
+    background: #dca5bd;
+    box-shadow: 0 0 15px #c87da0;
+}
+
+.hero-description {
+    margin-bottom: 32px;
+    color: #d7c2cd;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.explore-button {
+    padding: 12px 28px;
+    color: #f7e8ef;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 1px solid #c88da9;
+    background: rgba(54, 25, 43, 0.65);
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background: #c88da9;
+    color: #180e17;
+    box-shadow: 0 0 25px rgba(200, 141, 169, 0.35);
+}
+
+/* CONTENT */
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 35px;
+    scroll-margin-top: 35px;
+}
+
+.section h2 {
+    margin: 12px 0 25px;
+    color: #f2dce6;
+    font-size: clamp(30px, 5vw, 45px);
+    font-weight: normal;
+}
+
+.section > p:not(.section-label) {
+    margin-bottom: 20px;
+    color: #eee0e8;
+    font-size: 16px;
+}
+
+.section-label {
+    letter-spacing: 3px;
+}
+
+/* CARDS */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.info-card {
+    padding: 28px;
+    background: rgba(25, 15, 27, 0.82);
+    border: 1px solid rgba(220, 165, 189, 0.25);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #dca5bd;
+    background: rgba(56, 29, 47, 0.90);
+}
+
+.number {
+    color: #dca5bd;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.info-card h3 {
+    margin: 12px 0;
+    color: #f2dce6;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.info-card p {
+    color: #e0d0da;
+    font-size: 14px;
+}
+
+/* THERESIA AND LEGACY */
+.theresia-section {
+    border-top: 1px solid rgba(220, 165, 189, 0.20);
+    border-bottom: 1px solid rgba(220, 165, 189, 0.20);
+}
+
+.legacy-section blockquote {
+    margin-top: 35px;
+    padding: 20px 25px;
+    border-left: 2px solid #dca5bd;
+    background: rgba(31, 17, 31, 0.80);
+    color: #f0cadb;
+    font-size: 19px;
+    font-style: italic;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(10, 7, 13, 0.90);
+    border-top: 1px solid rgba(220, 165, 189, 0.20);
+}
+
+footer p {
+    color: #f2dce6;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+footer span,
+footer small {
+    display: block;
+    margin-top: 8px;
+    color: #d0bac7;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        letter-spacing: 3px;
+    }
+
+    .section {
+        padding: 70px 24px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .babel-background {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+}
