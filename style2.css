@@ -1,7 +1,21 @@
 /* =========================
    SARKAZ HISTORY
 ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #100d16;
+    color: #f3e7ed;
+    line-height: 1.8;
+}
+
+/* BACKGROUND */
 .history-section {
     position: relative;
     min-height: 100vh;
