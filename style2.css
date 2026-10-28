@@ -1,4 +1,16 @@
+.history-section {
+    background-image:
+        linear-gradient(
+            rgba(16, 13, 22, 0.78),
+            rgba(16, 13, 22, 0.94)
+        ),
+        url("Ziarah Epik di Kota Reruntuhan.png");
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* =========================
    SARKAZ HISTORY
 ========================= */
