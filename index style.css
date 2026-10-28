@@ -1,0 +1,35 @@
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    .history-section {
+        padding: 70px 20px;
+    }
+
+    .history-card {
+        grid-template-columns: 42px 1fr;
+        gap: 15px;
+        padding: 25px 18px;
+    }
+
+    .history-number {
+        font-size: 23px;
+        padding-right: 10px;
+    }
+
+    .history-content h3 {
+        font-size: 21px;
+    }
+
+    .history-content p:not(.history-date) {
+        font-size: 14px;
+    }
+
+    .history-date {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .history-conclusion {
+        padding: 35px 20px;
+    }
+}
